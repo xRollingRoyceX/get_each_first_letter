@@ -3,7 +3,6 @@
  * Author: sean
  */
 #include <std_lib_facilities.h>
-#include<cctype>
 //get first char in each word.
 string get_char(string::size_type cnt, string s, string holder)
 {

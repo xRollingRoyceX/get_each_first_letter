@@ -29,9 +29,13 @@ int main()
 {
     string::size_type stct = 0;
     //this sentence works as a way to test the waters of the function
-    string s = "e!ENTER YOUR OWN SENTENCE HERE this is also test-text"
-            " for ,my little. [rogram to see h.ow it works and what"
-            " to debug 2for?~!5";
+     string s = "A paragraph is a group of words put together to form a "
+            "group that is usually longer than a sentence. Paragraphs are "
+            "often made up of many sentences. They are usually between four "
+            "to eight sentences. Paragraphs can begin with an indentation "
+            "(about five spaces), or by missing a line out, and then starting "
+            "again; this makes telling when one paragraph ends and another "
+            "begins easier.";
     string hold;
     cout << get_char(stct, s, hold) << endl;
 } 

@@ -2,7 +2,7 @@
 #include <std_lib_facilities.h>
 #include <exception>
 //get first char in each word.
-const string get_char(string::size_type cnt, string &s, string s_holder, const unsigned &spaces = 1) {
+const string get_char(string::size_type cnt, const string &s, string s_holder, const unsigned &spaces = 1) {
     if (!s.empty()) {
         //go through the string
         for (cnt = 0; cnt != s.size(); ++cnt) {

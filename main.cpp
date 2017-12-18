@@ -10,7 +10,7 @@ const string get_char(string::size_type cnt, string &s, string s_holder)
     for (cnt = 0; cnt != s.size(); ++cnt) 
     {
         //If current char is not the same, AND if its not a punct. mark. 
-        if (isalpha(s[cnt - 1]) != isalpha(s[cnt]) && !ispunct(s[cnt])) 
+        if (isalpha(s[cnt - 1]) != isalpha(s[cnt]) && !ispunct(s[cnt]) && !isdigit(s[cnt])) 
         {
             //store first letter from each word 
             s_holder += s[cnt];
@@ -25,9 +25,10 @@ int main()
      *  errors like '[rogram' and 'h.ow'.  
      */
     string::size_type stct = 0;
-    string s = "ENTER YOUR OWN SENTENCE HERE this is also test-text"
+    //this sentence works as a way to test the waters of the function
+    string s = "e!ENTER YOUR OWN SENTENCE HERE this is also test-text"
             " for ,my little. [rogram to see h.ow it works and what"
-            " to debug for";
+            " to debug 2for?~!5";
     string hold;
     cout << get_char(stct, s, hold) << endl;
 } 
@@ -41,6 +42,12 @@ int main()
 //  quite happy i solved this problem after a small step away from the computer..
 //  my error was stupid but worth learning about and seeing how and why.
 
+
+
+
+
+//.............................................................................................................
+//                                      //BREAK: just cause 'code', disregard. (My notes in a way)
 //..
 //  ..                              X X XXXXXYY____Y
 //    ............................X======XXXXYYYYYYYY

@@ -3,6 +3,7 @@
  * Author: sean
  */
 #include <std_lib_facilities.h>
+#include <exception>
 //get first char in each word.
 const string get_char(string::size_type cnt, string &s, string s_holder)
 {
@@ -18,15 +19,14 @@ const string get_char(string::size_type cnt, string &s, string s_holder)
                 s_holder += s[cnt];
             }
         }
+    }else{
+        throw std::runtime_error("Error... -> Invalid inputs <-");
     }
     // ... I should haven't even have commented the purpose of the previous code...
     return s_holder;
 }
 int main()
 {
-    /*  Work on figuring out how to fix minor, 
-     *  errors like '[rogram' and 'h.ow'.  
-     */
     string::size_type stct = 0;
     //this sentence works as a way to test the waters of the function
     string s = "e!ENTER YOUR OWN SENTENCE HERE this is also test-text"
@@ -44,9 +44,6 @@ int main()
 
 //  quite happy i solved this problem after a small step away from the computer..
 //  my error was stupid but worth learning about and seeing how and why.
-
-
-
 
 
 //.............................................................................................................

@@ -40,5 +40,5 @@ int main() {
             "depending on the topic and how much information is required.";
 
     string hold;
-    cout << get_char(stct, s, hold, 2) << endl;
+    cout << get_char(stct, s, hold) << endl;
 }

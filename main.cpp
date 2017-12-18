@@ -6,14 +6,17 @@
 //get first char in each word.
 const string get_char(string::size_type cnt, string &s, string s_holder)
 {
-    //go through the string
-    for (cnt = 0; cnt != s.size(); ++cnt) 
+    if (!s.empty()) 
     {
-        //If current char is not the same, AND if its not a punct. mark. 
-        if (isalpha(s[cnt - 1]) != isalpha(s[cnt]) && !ispunct(s[cnt]) && !isdigit(s[cnt])) 
+        //go through the string
+        for (cnt = 0; cnt != s.size(); ++cnt) 
         {
-            //store first letter from each word 
-            s_holder += s[cnt];
+            //If current char is not the same, AND if its not a punct. mark. 
+            if (isalpha(s[cnt - 1]) != isalpha(s[cnt]) && !ispunct(s[cnt]) && !isdigit(s[cnt])) 
+            {
+                //store first letter from each word 
+                s_holder += s[cnt];
+            }
         }
     }
     // ... I should haven't even have commented the purpose of the previous code...
